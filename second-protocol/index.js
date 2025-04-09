@@ -48,8 +48,8 @@ class Verifyier {
 
 // Polynomial functions and constants
 const P_x = new Polynomial([4, 3, 1]);
-P_x.setExponentialValues([3, 9, 81]);
-P_x.evaluateWithExponentialValues();
+P_x.setGeneratorExponentialValues([3, 9, 81]);
+console.log(P_x.evaluateWithGeneratorExponentialValues());
 process.exit();
 
 const t_x = (x) => x - 2; // the function t(x) (target)
